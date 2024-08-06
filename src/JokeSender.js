@@ -33,7 +33,7 @@ function JokeSender({ setState, setMessage, setSeverity }) {
         onClick={() => sendJoke(
           'https://y86ysgzha6.execute-api.us-east-1.amazonaws.com/getRandomJokes',
           'Joke sent successfully!',
-          'Joke not sent successfully!'
+          'There was an error sending the joke!'
         )}
       >
         Send Random Joke
@@ -45,7 +45,7 @@ function JokeSender({ setState, setMessage, setSeverity }) {
         onClick={() => sendJoke(
           'https://y86ysgzha6.execute-api.us-east-1.amazonaws.com/getTenRandomJokes',
           '10 Jokes sent successfully!',
-          '10 Jokes not sent successfully!'
+          'There was an error sending the jokes!'
         )}
       >
         Send 10 Random Jokes
