@@ -1,0 +1,47 @@
+/* Ensure the body and html elements take up the full height */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Style the root div to also take up the full height */
+#root {
+    height: 100%;
+}
+
+/* Style the background container */
+.background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 2400% 2400%;
+    animation: gradientAnimation 30s ease infinite;
+}
+
+/* Style the content to be centered */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+/* Define the animation for the gradient background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
